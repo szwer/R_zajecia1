@@ -11,4 +11,16 @@ weatherText <- content(getWeather, "text")
 weatherJson <- fromJSON(weatherText, flatten = TRUE)
 weatherDF <- as.data.frame(weatherJson)
 View(weatherDF)
-test <-'ok'
+
+x <- 123.4
+# x <- "string"
+# x <- 1:100
+
+is.vector(x)
+class(x)
+
+x <- c(1,2,3,4,5)
+x <- c(x, FALSE)
+class(x)
+y <- as.logical(x)
+as.numeric(y)
